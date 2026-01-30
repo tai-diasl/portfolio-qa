@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Taís Dias, desenvolvedora Frontend com foco em JavaScript, React e acessibilidade.">
+
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="script.js" defer></script>
+  <title>Taís Dias | Portfólio</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <!-- Botão para o menu hamburger -->
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
+        ☰
+      </button>
+      <ul id="menu-principal" class="menu lista-none flex gap-20">
+        <li><a href="#sobre-mim" class="link-none nav-color">Sobre Mim</a></li>
+        <li><a href="#hobbies" class="link-none nav-color">Hobbies</a></li>
+        <li><a href="#educacao" class="link-none nav-color">Formação</a></li>
+        <li><a href="#projectos" class="link-none nav-color">Projectos</a></li>
+        <li><a href="#contactos" class="link-none nav-color">Contactos</a></li>
+        <li>
+          <!-- Não coloquei o CV porque há muitas informações pessoais e, por questão de segurança, prefiro enviar diretamente para quem tiver interesse
+          
+          <a href="assets/TaísAyanaDias_CV.pdf" download="TaisDias_CV" class="btn-link link-none" aria-label="Fazer download do CV de Taís Dias">Ver CV</a> -->
+          <a href="assets/mensagem.pdf" download="mensagem_!CV" class="btn-link link-none" aria-label="Fazer download do CV de Taís Dias">Ver CV</a>
+        </li>
+        <li>
+          <figure>
+            <a href="https://github.com/tai-diasl" target="_blank" aria-label="Abrir o GitHub Taís Dias">
+              <img src="assets/img/redesSociais/github.png" alt="Ícone do GitHub" class="icone-redesSociais">
+            </a>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <a href="https://www.linkedin.com/in/taisadiasl/" target="_blank" aria-label="Abrir o LinkedIn para Taís Dias">
+              <img src="assets/img/redesSociais/linkedin.png" alt="Ícone do LinkedIn" class="icone-redesSociais">
+            </a>
+          </figure>
+        </li>
+        <li>
+          <button id="theme-toggle" class="btn-theme">🌙</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre-mim" class="container layout-duas-colunas">
+      <img src="assets/img/tais.jpg" alt="Foto de Taís Dias a sorrir." class="imagens-tais">
+      <article>
+        <p>Olá!👋🏾 Eu sou </p>
+        <h1><span>Taís Dias</span></h1>
+        <h2 class="dev">Analista Testes e QA</h2>
+        <div>
+          <p>
+            Eu estou trilhando o meu caminho na TI, mais especificamente na área de Testes e Qualidade de Software.
+          </p>
+          <p>
+            Eu estudei música durante toda a minha infância e juventude e, agora, aos 30 e muitos anos , resolvi expandir meus conhecimentos e buscar novos horizontes em outra área.
+          </p>
+          <p>
+             Minha querida <span>mãe</span> sempre me falou que <span>"a música é uma linguagem universal"</span> e que <span>"a tecnologia é a linguagem do futuro"</span> (e do presente!). Sob esta influência, resolvi migrar para a área da tecnologia. Não tem sido fácil, mas gosto de desafios e estou muito animada com tudo o que tenho aprendido e com todas as inúmeras coisas que vou aprender.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section id="hobbies" class="container layout-duas-colunas">
+      <article>
+        <h2 class="toUpperCase">Meus Hobbies</h2>
+        <p>
+          Eu gosto muito de ouvir música, assistir a filmes e documentários, ler, viajar, criar coisas novas, mas, sem dúvida, o meu hobby favorito é andar de patins. Para mim, é uma daquelas coisas que proporcionam uma sensação incrível de liberdade, mas com os pés bem firmes no chão.
+        </p>
+        <p>
+          Eu <span>amo animais</span> e <span>aprendi com os meus pais</span>! Minha mãe não podia ver um animal em apuros que ela ajudava. Foi assim que começou a resgatar e doar. <span>Não foram muitos, mas foram significativos e grandes exemplos,</span> que ensinaram à minha irmã e a mim.
+        </p>
+        <p>
+          Esta foto, de meados dos anos 90, representa duas das minhas maiores paixões: <span>patins</span> e <span>animais</span>. Agora há também a <span>tecnologia</span>👩🏾‍💻!
+        </p>
+      </article>
+      <img src="assets/img/taisPqna.jpg" alt="Foto de Taís Dias a sorrir e andar de patins, ao lado de um cão de porte médio." class="imagens-tais">
+    </section>
+
+    <section id="educacao" class="full-bg-blue">
+      <div class="container">
+        <h2 class="toUpperCase">Formação</h2>
+        <div class="sub-section">
+          <h3 class="margin-bottom-titulo toUpperCase">Educação</h3>
+          <ol class="lista-none">
+            <li class="lista-margem">[2025 - 2026]
+                <p>
+                  Desenvolvimento Frontend - JavaScript <br>
+                  Programa UPskill, em parceria com a Faculdade de Ciências da Universidade de Lisboa
+                </p>
+            </li>
+            <li class="lista-margem">[2022 – 2025]
+              <p>
+                Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas <br>
+                Centro Universitário Internacional - UNINTER
+              </p>
+            </li>
+            <li class="lista-margem">[2021 – 2022]
+              <p>
+                Bootcamp de Desenvolvimento Web <br>
+                CodeMaster
+              </p>
+            </li>
+            <li class="lista-margem">[2007 – 2012]
+              <p>
+                Licenciatura em Educação Artística com Habilitação em Música <br>
+                Faculdade Santa Marcelina - FASM
+              </p>
+            </li>
+          </ol>
+        </div>
+        <section class="sub-section">
+          <h3 class="margin-bottom-titulo toUpperCase">Cursos</h3>
+          <p class="margem-paragrafo">HTML5 - OneBitCode</p>
+          <p class="margem-paragrafo">CSS3 - OneBitCode</p>
+          <p class="margem-paragrafo">Introdução ao Teste de Software -Júlio de Lima</p>
+        </section>
+        <section class="sub-section">
+          <h3 class="margin-bottom-titulo toUpperCase">Habilidades</h3>
+          <section>
+            <ul class="lista-none colunas-grid">
+              <li class="habilidades">HTML5</li>
+              <li class="habilidades">CSS3</li>
+              <li class="habilidades">JavaScript</li>
+              <li class="habilidades">Base de Dados</li>
+              <li class="habilidades">Testes manuais</li>
+              <li class="habilidades">Jira</li>
+              <li class="habilidades">Testes</li>
+              <li class="habilidades">Figma</li>
+              <li class="habilidades">Metodologias Ágeis</li>
+              <li class="habilidades">Desenvolvimento Web</li>
+              <li class="habilidades">Git & GitHub</li>
+              <li class="habilidades">Pacote Office</li>
+            </ul>
+          </section>
+        </section>
+        <section class="sub-section">
+          <h3 class="margin-bottom-titulo toUpperCase">Idiomas</h3>
+          <table border="1" id="tbl-idiomas">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Básico</th>
+                <th>Intermed.</th>
+                <th>Fluente</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Português</th>
+                <td></td>
+                <td></td>
+                <td class="destaque">X</td>
+              </tr>
+              <tr>
+                <th>Inglês</th>
+                <td></td>
+                <td class="destaque">X</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th>Francês</th>
+                <td class="destaque">X</td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+    </section>
+
+    <section id="projectos" class="container">
+      <h2 class="toUpperCase">Meus Projectos</h2>
+      <div class="flex flex-wrap gap-20">
+        <a href="https://tai-diasl.github.io/ongAdocao/" target="_blank" class="link-none link-color">
+          <figure>
+            <img src="./assets/img/projectos/thumbOngAdocao.png" alt="Imagem do site da ONG AdoCão" class="img-projectos">
+            <figcaption>Galeria de fotos de cachorros da ONG AdoCão</figcaption>
+          </figure>
+        </a>
+        <a href="https://tai-diasl.github.io/galeria_de_arte_impressionismo/" target="_blank" class="link-none link-color">
+          <figure>
+            <img src="./assets/img/projectos/thumbGaleriaDeArte.png" alt="Imagem do site da Galeria de Arte" class="img-projectos">
+            <figcaption>Um breve passeio pela Arte Impressionista</figcaption>
+          </figure>
+        </a>
+        <a href="https://www.figma.com/proto/xSlm4FWe7qvZZFf7PODcAz/Ta%C3%ADsAyanaDiasLindolfo?node-id=4-3&node-type=CANVAS&t=YdCc7yMQPfIf8LTd-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4%3A3" target="_blank" class="link-none link-color">
+          <figure>
+            <img src="./assets/img/projectos/thumbJoalheria.png" alt="Imagem do projecto com Figma de Uma Joalheria" class="img-projectos">
+            <figcaption>Protótipo do App de uma joalheria com Figma</figcaption>
+          </figure>
+        </a>
+        <a href="https://tai-diasl.github.io/percentual_genero/" target="_blank" class="link-none link-color">
+          <figure>
+            <img src="./assets/img/projectos/thumbPercentual.png" alt="Projeto de calculadora de gêneros" class="img-projectos">
+            <figcaption>Calcula o percentual dos gêneros em um grupo</figcaption>
+          </figure>
+        </a>
+        <a href="#" target="_blank" class="link-none link-color">
+          <figure>
+            <img src="assets/img/projectos/thumbForm.png" alt="Imagem do Projeto 6" class="img-projectos">
+            <figcaption>Calculadora</figcaption>
+          </figure>
+        </a>
+        <a href="https://tai-diasl.github.io/projeto-lampada/" target="_blank" class="link-none link-color">
+          <figure>
+            <img src="./assets/img/projectos/thumbLampada.png" alt="Imagem do Projeto da Lâmpada" class="img-projectos">
+            <figcaption>Lâmpada</figcaption>
+          </figure>
+        </a>
+      </div>
+    </section>
+
+    <section class="full-bg-blue">
+      <section id="contactos" class="container container-contactos">
+        <h2 class="toUpperCase">Contactos</h2>
+        <div>
+          <form action="" onsubmit="enviarForm(event)">
+            <fieldset>
+              <legend>Dados Pessoais</legend>
+              <div>
+                <label for="nome">Nome</label><br>
+                <input type="text" name="nome" id="nome" required>
+              </div>
+              <div>
+                <label for="telemovel">Telemóvel</label><br>
+                <input type="tel" name="telemovel" id="telemovel">
+              </div>
+              <div>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email" required>
+              </div>
+              <label for="assunto">Assunto</label><br>
+              <select name="opcao" id="opcao">
+                <option value="" disabled selected>Selecione</option>
+                <option value="recrutamento">Recrutamento</option>
+                <option value="freelance">Freelance</option>
+                <option value="orcamento">Orçamento</option>
+                <option value="outro">Outro</option>
+              </select>
+            </fieldset>
+            <fieldset>
+              <legend>Mensagem</legend>
+              <textarea name="Mensagem" id="mensagem" placeholder="Escreva sua mensagem" required rows="5" minlength="10"></textarea>
+            </fieldset>
+            <div>
+              <button type="submit"  class="btn" onclick="mostrarConfirmacao(event)">Enviar</button>
+            </div>
+            <p id="mensagem-confirmacao" style="display: none"></p>
+          </form>
+          <section>
+            <h3 class="margin-top-bottom">Fale comigo diretamente pelas opções abaixo 👇🏾</h3>
+            <div class="flex flex-center gap-20">
+              <figure>
+                <a href="mailto:tais@email.com" class="link-none link-color btn-colorido" aria-label="Enviar email para Taís Dias">
+                <img src="assets/img/contactos/mail.png" alt="" class="icone-contactos">
+                </a>
+              </figure>
+              <figure>
+                <a href="https://wa.me/351900000000?text=Olá!%20Vim%20pelo%20seu%20portfólio." target="_blank" rel="noopener noreferrer"class="link-none link-color btn-colorido" aria-label="Contactar Taís Dias por WhatsApp">
+                <img src="assets/img/contactos/whatsapp.png" alt="" class="icone-contactos">
+                </a>
+              </figure>
+            </div>
+          </section>
+        </div>
+      </section>
+    </section>
+  </main>
+
+    <section>
+      <div class="full-bg-blue">
+        <h2 class="toUpperCase text-center">Localização</h2>
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22622.23422720663!2d-9.17813250703378!3d38.75527519226613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1932e2dc27dd69%3A0x9c44c081f003864b!2sEdificio%20C6%20-%20Faculdade%20de%20Ci%C3%AAncias%20da%20Universidade%20de%20Lisboa!5e1!3m2!1spt-PT!2spt!4v1765741591836!5m2!1spt-PT!2spt" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+  <footer>
+    <p class="texto-gradient">
+      &copy; Made with <span class="heart">♡</span> by Taís Dias<br>2026 
+    </p>
+  </footer>
+</body>
+</html>
