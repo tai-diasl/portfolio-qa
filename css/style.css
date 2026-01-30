@@ -76,7 +76,7 @@ legend {
   border: 2px solid var(--texto-escuro);
   border-radius: 10px;
   box-shadow: 1px 1px 1px 1px #1E293B;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
   background-color: #fff;
   color: #081d3d;
   font-weight: bold;
@@ -94,17 +94,22 @@ legend {
   color: var(--texto-claro);
   box-shadow: 0px 0px 0px 0px transparent;
   border: 2px solid #fff;
-  transform: scale(1.1);
+  transition-duration: 0.3s;
 }
 
 .btn-theme {
   background-color: transparent;
   border: transparent;
+  cursor: pointer;
 }
 
 .link-color {
   color: var(--texto-escuro);
   transition-duration: 0.2s;
+}
+
+.nav-links:hover {
+  transform: scale(1.06);
 }
 
 .link-color:hover {
@@ -207,7 +212,7 @@ footer {
   color: var(--linear-roxa);
 }
 
-.texto-gradient, .dev {
+.texto-gradient, .dev  {
   background: linear-gradient(90deg,  var(--linear-roxa), var(--linear-rosa));
   -webkit-background-clip: text;
   background-clip: text;
@@ -228,6 +233,10 @@ footer {
 
 .icone-contactos {
   width: 40px;
+}
+
+.icone-redesSociais:hover, .icone-contactos:hover, .btn-theme:hover {
+  transform: scale(1.1);
 }
 
 .imagens-tais {
@@ -327,6 +336,7 @@ td, th, tr {
   background: linear-gradient(90deg,  var(--linear-roxa),var(--linear-rosa));
   cursor: pointer;
   color: #fff;
+  transform: scale(1.03);
 }
 
 .colunas-grid {
@@ -341,6 +351,7 @@ td, th, tr {
   transition-duration: 0.3s;
   text-align: center;
   color: var(--texto-escuro);
+  width: 70%;
 }
 
 form input[type="text"],
@@ -371,6 +382,18 @@ iframe {
   color: #fff;
 }
 
+
+/* Grid de projetos - CENTRALIZADO */
+.projectos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.projeto-card {
+  flex: 0 1 auto;
+}
 
 /* Media Query */
 @media (max-width: 768px) {
@@ -419,6 +442,19 @@ iframe {
   .colunas-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .projectos-grid {
+    justify-content: center;
+  }
+
+  .projeto-card {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .img-projectos {
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -433,5 +469,27 @@ iframe {
   h1, h2 {
     font-size: 1.5rem;
     letter-spacing: 3px;
+  }
+
+  .projectos-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projeto-card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .container-contactos {
+    width: 90%;
+  }
+
+  p, li {
+    font-size: 1.3rem;
+  }
+
+  figcaption {
+    font-size: 1.1rem;
   }
 }

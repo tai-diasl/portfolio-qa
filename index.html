@@ -18,11 +18,11 @@
         ☰
       </button>
       <ul id="menu-principal" class="menu lista-none flex gap-20">
-        <li><a href="#sobre-mim" class="link-none nav-color">Sobre Mim</a></li>
-        <li><a href="#hobbies" class="link-none nav-color">Hobbies</a></li>
-        <li><a href="#educacao" class="link-none nav-color">Formação</a></li>
-        <li><a href="#projectos" class="link-none nav-color">Projectos</a></li>
-        <li><a href="#contactos" class="link-none nav-color">Contactos</a></li>
+        <li class="nav-links"><a href="#sobre-mim" class="link-none nav-color">Sobre Mim</a></li>
+        <li class="nav-links"><a href="#hobbies" class="link-none nav-color">Hobbies</a></li>
+        <li class="nav-links"><a href="#educacao" class="link-none nav-color">Formação</a></li>
+        <li class="nav-links"><a href="#projectos" class="link-none nav-color">Projectos</a></li>
+        <li class="nav-links"><a href="#contactos" class="link-none nav-color">Contactos</a></li>
         <li>
           <!-- Não coloquei o CV porque há muitas informações pessoais e, por questão de segurança, prefiro enviar diretamente para quem tiver interesse
           
@@ -44,7 +44,7 @@
           </figure>
         </li>
         <li>
-          <button id="theme-toggle" class="btn-theme">🌙</button>
+          <button id="theme-toggle" class="btn-theme" title="Tema">🌙</button>
         </li>
       </ul>
     </nav>
@@ -182,41 +182,41 @@
 
     <section id="projectos" class="container">
       <h2 class="toUpperCase">Meus Projectos</h2>
-      <div class="flex flex-wrap gap-20">
+      <div class="flex flex-wrap gap-20 projectos-grid">
+        <a href="https://tai-diasl.github.io/projeto-lampada/" target="_blank" class="link-none link-color">
+          <figure>
+            <img src="./assets/img/projectos/thumbLampada.png" alt="Imagem do Projeto da Lâmpada" class="img-projectos">
+            <figcaption>Lâmpada (surpresa)</figcaption>
+          </figure>
+        </a>
         <a href="https://tai-diasl.github.io/ongAdocao/" target="_blank" class="link-none link-color">
           <figure>
             <img src="./assets/img/projectos/thumbOngAdocao.png" alt="Imagem do site da ONG AdoCão" class="img-projectos">
-            <figcaption>Galeria de fotos de cachorros da ONG AdoCão</figcaption>
+            <figcaption>Galeria de fotos de cachorros da ONG AdoCão (não responsivo)</figcaption>
           </figure>
         </a>
         <a href="https://tai-diasl.github.io/galeria_de_arte_impressionismo/" target="_blank" class="link-none link-color">
           <figure>
             <img src="./assets/img/projectos/thumbGaleriaDeArte.png" alt="Imagem do site da Galeria de Arte" class="img-projectos">
-            <figcaption>Um breve passeio pela Arte Impressionista</figcaption>
+            <figcaption>Um breve passeio pela Arte Impressionista (não responsivo)</figcaption>
           </figure>
         </a>
         <a href="https://www.figma.com/proto/xSlm4FWe7qvZZFf7PODcAz/Ta%C3%ADsAyanaDiasLindolfo?node-id=4-3&node-type=CANVAS&t=YdCc7yMQPfIf8LTd-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4%3A3" target="_blank" class="link-none link-color">
           <figure>
             <img src="./assets/img/projectos/thumbJoalheria.png" alt="Imagem do projecto com Figma de Uma Joalheria" class="img-projectos">
-            <figcaption>Protótipo do App de uma joalheria com Figma</figcaption>
+            <figcaption>Protótipo do App de uma joalheria com Figma (não responsivo)</figcaption>
           </figure>
         </a>
         <a href="https://tai-diasl.github.io/percentual_genero/" target="_blank" class="link-none link-color">
           <figure>
             <img src="./assets/img/projectos/thumbPercentual.png" alt="Projeto de calculadora de gêneros" class="img-projectos">
-            <figcaption>Calcula o percentual dos gêneros em um grupo</figcaption>
+            <figcaption>Calcula o percentual dos gêneros em um grupo (não responsivo)</figcaption>
           </figure>
         </a>
         <a href="#" target="_blank" class="link-none link-color">
           <figure>
             <img src="assets/img/projectos/thumbForm.png" alt="Imagem do Projeto 6" class="img-projectos">
-            <figcaption>Calculadora</figcaption>
-          </figure>
-        </a>
-        <a href="https://tai-diasl.github.io/projeto-lampada/" target="_blank" class="link-none link-color">
-          <figure>
-            <img src="./assets/img/projectos/thumbLampada.png" alt="Imagem do Projeto da Lâmpada" class="img-projectos">
-            <figcaption>Lâmpada</figcaption>
+            <figcaption>Percentual de gênero (não responsivo)</figcaption>
           </figure>
         </a>
       </div>
@@ -268,7 +268,7 @@
                 </a>
               </figure>
               <figure>
-                <a href="https://wa.me/351900000000?text=Olá!%20Vim%20pelo%20seu%20portfólio." target="_blank" rel="noopener noreferrer"class="link-none link-color btn-colorido" aria-label="Contactar Taís Dias por WhatsApp">
+                <a href="https://wa.me/351900000000?text=Olá!%20Este%20celular%20não%20é%20funcional.%20Contacte-me%20pelo%20formulário." target="_blank" rel="noopener noreferrer"class="link-none link-color btn-colorido" aria-label="Contactar Taís Dias por WhatsApp">
                 <img src="assets/img/contactos/whatsapp.png" alt="" class="icone-contactos">
                 </a>
               </figure>
