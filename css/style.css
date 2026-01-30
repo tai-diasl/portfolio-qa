@@ -116,9 +116,11 @@ legend {
   color: rgb(255, 20, 147);
 }
 
-.dev {
+.qa {
   font-size: 2rem;
+  line-height: 2.3rem;
   letter-spacing: 3px;
+  margin: 10px 0px 20px 0px;
 }
 
 h1, h2 {
@@ -212,14 +214,14 @@ footer {
   color: var(--linear-roxa);
 }
 
-.texto-gradient, .dev  {
+.texto-gradient, .qa  {
   background: linear-gradient(90deg,  var(--linear-roxa), var(--linear-rosa));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
-.texto-gradient:hover, .dev:hover {
+.texto-gradient:hover, .qa:hover {
   background: linear-gradient(90deg, var(--linear-rosa), var(--linear-roxa));
   -webkit-background-clip: text;
   background-clip: text;
